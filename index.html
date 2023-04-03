@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorfull Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="time">
+<!------------------------------HOURS-------------------------->
+        <div class="circle" style="--clr:#00ffcc;">
+            <div class="dots hr_dot"></div>
+            <svg>
+                <circle cx="75" cy="75" r="70"></circle>
+                <circle cx="75" cy="75" r="70" id="hh"></circle>
+            </svg>
+            <div id="hours">00</div>
+        </div>
+
+<!-- ---------------------------MINUTES------------------------->
+        <div class="circle" style="--clr:#00ff00;">
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="75" cy="75" r="70"></circle>
+                <circle cx="75" cy="75" r="70" id="mm"></circle>
+            </svg>
+            <div id="minutes">00</div>
+        </div>
+
+<!-----------------------------SECONDS ------------------------->
+        <div class="circle" style="--clr:#ff00ff;">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="75" cy="75" r="70"></circle>
+                <circle cx="75" cy="75" r="70" id="ss"></circle>
+            </svg>
+            <div id="seconds">00</div>
+        </div>
+
+        <div class="ap">
+            <div id="ampm">AM</div>
+        </div>
+    </div>
+    
+</body>
+</html>
