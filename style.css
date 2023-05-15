@@ -113,4 +113,7 @@ body {
     font-weight: 300;
     letter-spacing: 0.1em;
     }
+    .ap {
+        margin-bottom: 1rem;
+    }
 }
