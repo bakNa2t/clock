@@ -10,7 +10,6 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(45deg, rgba(146, 141, 171,0.8),rgba(31, 28, 44,0.8))
-    /* background: #2f363e; */
 }
 
 #time {
