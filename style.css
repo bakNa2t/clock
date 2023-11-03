@@ -15,8 +15,6 @@ body {
 #time {
     display: flex;
     justify-content: center;
-    width: 50%;
-    height: 70%;
     margin: auto 0;
     gap: 40px;
     color: #fff;
@@ -24,7 +22,7 @@ body {
     border: 2px outset #fff;
     border-radius: 40px;
     background-color: rgba(131,137,150, 0.6);
-    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 #time .circle {
@@ -60,23 +58,27 @@ body {
     position: absolute;
     text-align: center;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #time div span {
     position: absolute;
     transform: translate(-50%, 5px);
-    font-size: 0.45em;
+    font-size: 0.75rem;
     font-weight: 400;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     color: #ffff33;
 }
 
 #time .ap {
     position: relative;
-    font-size: 1em;
+    right: 10px;
     transform: translateX(-20px);
+}
+
+#time .ap>div{
+    font-size: 1.5rem;
 }
 
 .dots {
@@ -99,20 +101,53 @@ body {
     box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
 }
 
-@media (max-width:412px) {
+/* 'Designed by' element*/
+.footer {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #253529;
+}
+
+.footer a {
+    display: inline-block;
+    font-size: .9rem;
+    text-decoration: none;
+    color: #9acd32;
+    text-shadow: 0 0 8px #00000099;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer a:hover {
+    transform: translateY(-3px);
+    color: #556b2f;
+    text-shadow: 0 0 4px rgba(209,225,137,.8);
+    transition: all 0.4s ease-in-out;
+}
+
+@media (max-width:600px) {
     #time {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
     
     #time div span {
-    font-size: 0.6em;
-    font-weight: 300;
-    letter-spacing: 0.1em;
+        font-size: 0.6rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
     }
-    .ap {
-        margin-bottom: 1rem;
+    #time .ap {
+        position: relative;
+        right: 0;
+        bottom: 1.2rem;
+        transform: translateX(-10px);
     }
 }
