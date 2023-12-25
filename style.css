@@ -19,8 +19,13 @@ body {
   );
 }
 
-body h1 {
+h1 {
   margin-bottom: 1rem;
+}
+
+h1 span {
+  color: #333300;
+  text-shadow: 0 0 4px #ffffffcc;
 }
 
 #time {
@@ -182,12 +187,18 @@ noscript h3 {
 }
 
 @media (max-width: 600px) {
+  body {
+    padding: 0 16px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
   #time {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
   }
 
   #time div span {
