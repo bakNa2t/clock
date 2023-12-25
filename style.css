@@ -73,6 +73,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  border-bottom: 1px solid #ffff33;
   color: #ffff33;
 }
 
@@ -104,6 +105,18 @@ body {
   background: var(--clr);
   border-radius: 50%;
   box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+
+.hours {
+  text-shadow: 0 0 6px rgba(0, 255, 204, 0.8);
+}
+
+.minutes {
+  text-shadow: 0 0 6px rgba(0, 255, 0, 0.8);
+}
+
+.seconds {
+  text-shadow: 0 0 6px rgba(255, 0, 255, 0.8);
 }
 
 /* 'Designed by' element*/
